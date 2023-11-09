@@ -1,0 +1,18 @@
+<p>Mis peliculas favoritas</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Votos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies">
+      <td>{{ movie.original_title }}</td>
+      <td>{{ movie.overview }}</td>
+      <td>{{ movie.vote_average }}</td>
+    </tr>
+  </tbody>
+</table>
